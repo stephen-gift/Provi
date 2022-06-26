@@ -9,6 +9,7 @@ import Request from "./components/pages/Request/Request";
 import Settings from "./components/pages/Settings/Settings";
 import ForgotPassword from "./pages/ForgotPassword/forgot-password";
 import ChangePassword from "./pages/ChangePassword/change-password";
+import ICDashboard from "./pages/ICDashboard/ICDashboard";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Redirect to="/login" />
+        </Route>
+        <Route path="/ic-dashboard" exact>
+          <ICDashboard />
         </Route>
         <Route path="/login" exact>
           <Login />

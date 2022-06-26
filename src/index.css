@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 body {
-  margin: 0; 
+  margin: 0;
 }
 
 @layer base {
@@ -14,3 +14,41 @@ body {
   }
 }
 
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.nav {
+  @apply flex gap-6 items-center py-5 pl-8 pr-2 border-l-[3px] border-transparent transition ease-out duration-500 select-none;
+}
+
+.nav span {
+  @apply text-lgray;
+}
+
+.nav svg {
+  @apply text-lgray shrink-0;
+}
+.active,
+.nav:hover {
+  @apply bg-lgray bg-opacity-[0.08] border-lighterGray;
+}
+
+.active span,
+.nav:hover span,
+.active svg,
+.nav:hover svg {
+  @apply text-lighterGray;
+}
+
+.logout-btn {
+  @apply text-red-700 !important;
+}

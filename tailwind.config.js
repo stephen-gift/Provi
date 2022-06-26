@@ -30,8 +30,11 @@ module.exports = {
       colors: {
         lblack: "#252733",
         lgray: "#9FA2B4",
+        lighterGray: "#DDE2FF",
         bgray: "#F0F1F7",
+        bggray: "#F7F8FC",
         ibgray: "#FCFDFE",
+        grayScale: "#DFE0EB",
         buyellow: "#F7B811",
         siblack: "#363740",
         bImage: "#E5E5E5",
@@ -43,10 +46,13 @@ module.exports = {
         sgry: "#ACAFD2",
         bdblack: "#00000070",
         metallicSilver: "#A4A6B3",
-        error: '#FF0000'
+        error: "#FF0000",
       },
       gap: {
         700: "700px",
+      },
+      opacity: {
+        10: "0.1",
       },
     },
   },
