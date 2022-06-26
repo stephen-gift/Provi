@@ -98,6 +98,33 @@ function ICDashboard() {
         </div>
 
         {/* Stats Cards */}
+        <div className="my-12 grid grid-cols-3 gap-8">
+          <div className="group bg-white rounded-lg border border-grayScale hover:border-buyellow cursor-pointer flex items-center justify-center gap-2 flex-col p-2 min-h-[130px] transition ease-out duration-300">
+            <h3 className="text-xl font-bold text-lgray group-hover:text-buyellow">
+              Total Request
+            </h3>
+            <span className="text-3xl font-bold text-lblack group-hover:text-buyellow">
+              350
+            </span>
+          </div>
+          <div className="group bg-white rounded-lg border border-grayScale hover:border-buyellow cursor-pointer flex items-center justify-center gap-2 flex-col p-2 min-h-[130px] transition ease-out duration-300">
+            <h3 className="text-xl font-bold text-lgray group-hover:text-buyellow">
+              Total Card Printed
+            </h3>
+            <span className="text-3xl font-bold text-lblack group-hover:text-buyellow">
+              12,304
+            </span>
+          </div>
+
+          <div className="group bg-white rounded-lg border border-grayScale hover:border-buyellow cursor-pointer flex items-center justify-center gap-2 flex-col p-2 min-h-[130px] transition ease-out duration-300">
+            <h3 className="text-xl font-bold text-lgray group-hover:text-buyellow">
+              Current Blank Card
+            </h3>
+            <span className="text-3xl font-bold text-lblack group-hover:text-buyellow">
+              20,000
+            </span>
+          </div>
+        </div>
 
         {/* Table */}
       </div>
