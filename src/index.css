@@ -49,3 +49,11 @@ nav .active span,
 nav .active svg {
   @apply text-lighterGray;
 }
+
+.scrolledTableHead th {
+  @apply p-2 lg:px-4 lg:py-3 font-bold text-sm text-white sticky top-[1px];
+}
+
+.scrolledTableBody td {
+  @apply p-2 lg:px-4 lg:py-3 text-sm font-semibold;
+}
