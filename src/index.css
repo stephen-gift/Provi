@@ -27,11 +27,11 @@ body {
 }
 
 .nav {
-  @apply flex gap-6 items-center py-5 pl-8 pr-2 border-l-[3px] border-transparent transition ease-out duration-500 select-none;
+  @apply flex gap-4 lg:gap-6 items-center py-5 pl-4 lg:pl-8 pr-2 border-l-[3px] border-transparent transition ease-out duration-500 select-none;
 }
 
 .nav span {
-  @apply text-lgray;
+  @apply text-lgray text-sm lg:text-base;
 }
 
 .nav svg {

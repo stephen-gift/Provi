@@ -35,6 +35,7 @@ module.exports = {
         bggray: "#F7F8FC",
         ibgray: "#FCFDFE",
         grayScale: "#DFE0EB",
+        grayShade: "#2F444F",
         buyellow: "#F7B811",
         siblack: "#363740",
         bImage: "#E5E5E5",
