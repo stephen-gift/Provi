@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/sidelogo.svg";
 import userImg from "../../assets/_header.png";
@@ -10,208 +10,213 @@ import { IoIosNotifications } from "react-icons/io";
 
 function ICDashboard() {
   const [showNotifications, setShowNotifications] = useState(false);
-  const [data, setData] = useState([
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-    {
-      branch: "Ikeja GRA Lagos",
-      branchManager: "Modupe Femi Akulasah",
-      email: "modepef.a@providus.cgi",
-      branchID: "#33BB3445AC",
-      cardPrinted: 405,
-      totalRequested: 200,
-    },
-  ]);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    setData([
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+      {
+        branch: "Ikeja GRA Lagos",
+        branchManager: "Modupe Femi Akulasah",
+        email: "modepef.a@providus.cgi",
+        branchID: "#33BB3445AC",
+        cardPrinted: 405,
+        totalRequested: 200,
+      },
+    ]);
+  }, []);
+
   return (
     <div className="w-screen min-h-screen h-screen bg-bggray flex relative overflow-y-auto overflow-x-hidden">
       {/* Sidebar */}
@@ -328,20 +333,20 @@ function ICDashboard() {
 
               {/* Notification Display */}
               {showNotifications && (
-                <div className="absolute right-full top-4 z-50 flex flex-col bg-white shadow-md rounded-[10px] w-56 max-h-72 py-3 px-2">
+                <div className="absolute right-full top-4 z-50 flex flex-col bg-white shadow-md rounded-[10px] w-60 max-h-72 py-3 px-2">
                   {/* Header */}
                   <div className="flex items-center justify-between">
                     <h6 className="text-xs font-bold">Notifications</h6>
-                    <span className="text-[8px] text-buyellow font-semibold underline cursor-pointer">
+                    <span className="text-[8px] text-buyellow font-semibold font-poppins underline cursor-pointer">
                       Mark all as read
                     </span>
                   </div>
 
                   {/* Filter Section */}
                   <div className="mt-3 border-b">
-                    <div className="flex gap-1 items-center justify-start border-b-2 border-black w-fit p-1">
+                    <div className="flex gap-1 items-center justify-start border-b-2 border-black w-fit p-1 font-poppins">
                       <span className="font-bold text-[10px]">All</span>
-                      <span className="bg-buyellow text-white text-[10px] p-0.5 rounded-md">
+                      <span className="bg-buyellow text-white text-[10px] py-0.5 px-1 rounded-md">
                         15
                       </span>
                     </div>
@@ -350,105 +355,105 @@ function ICDashboard() {
                   {/* Notification Lists */}
                   <ul className="flex-1 overflow-y-auto">
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
                       requested for 100 blank card.
                     </li>
                     <li
-                      className="border-b pt-2 pb-1 text-[10px] font-semibold cursor-pointer hover:font-bold transition ease-linear"
+                      className="border-b pt-2 pb-1 text-[10px] font-semibold font-poppins cursor-pointer"
                       onClick={() => setShowNotifications(false)}
                     >
                       Branch <span className="text-buyellow">#22341cd</span>{" "}
@@ -461,7 +466,7 @@ function ICDashboard() {
 
             {/* User Info */}
             <div className="flex items-center">
-              <h4 className="text-xs lg:text-sm font-semibold border-l-2 border-l-grayScale border-opacity-50 px-4 py-1 lg:py-2">
+              <h4 className="text-xs lg:text-sm font-poppins font-medium border-l-2 border-l-grayScale border-opacity-50 px-4 py-1 lg:py-2">
                 Jones Ferdinand
               </h4>
 
