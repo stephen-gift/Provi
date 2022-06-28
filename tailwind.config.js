@@ -6,17 +6,44 @@ module.exports = {
         "login-image": "url('/src/assets/providus1.png')",
         "signup-image": "url('/src/assets/signupBG.png')",
       },
+      borderWidth: {
+        1.5: "1.5px",
+        3: "3px",
+      },
+      margin: {
+        "sidebar-sm": "180px",
+        "sidebar-lg": "255px",
+      },
       width: {
         "login-width": "380px",
+        "sidebar-sm": "180px",
+        "sidebar-md": "200px",
+        "sidebar-lg": "255px",
       },
       height: {
         "login-height": "600px",
         "signup-height": "770px",
         "side-height": "1024px",
       },
+      minWidth: {
+        "sidebar-md": "200px",
+      },
+      maxWidth: {
+        "sidebar-lg": "255px",
+      },
+      minHeight: {
+        "stats-height": "130px",
+      },
+      maxHeight: {
+        "table-height": "400px",
+      },
       fontFamily: {
         mulish: ["Mulish", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+      },
+      fontSize: {
+        8: "8px",
+        10: "10px",
       },
       fontWeight: {
         hairline: 100,
@@ -31,12 +58,12 @@ module.exports = {
       colors: {
         lblack: "#252733",
         lgray: "#9FA2B4",
-        lighterGray: "#DDE2FF",
+        lavender: "#DDE2FF",
         bgray: "#F0F1F7",
-        bggray: "#F7F8FC",
+        ghostWhite: "#F7F8FC",
         ibgray: "#FCFDFE",
-        grayScale: "#DFE0EB",
-        grayShade: "#2F444F",
+        platinum: "#DFE0EB",
+        charcoal: "#2F444F",
         buyellow: "#F7B811",
         siblack: "#363740",
         bImage: "#E5E5E5",
@@ -54,7 +81,11 @@ module.exports = {
         700: "700px",
       },
       opacity: {
+        8: "0.08",
         10: "0.1",
+      },
+      inset: {
+        1: "1px",
       },
     },
   },

@@ -4,7 +4,7 @@ function ScrolledTable({ children }) {
   return (
     <div className="py-4">
       <div
-        className="table-container overflow-y-auto overflow-x-hidden  max-h-[400px] h-full w-full"
+        className="table-container overflow-y-auto overflow-x-hidden  max-h-table-height h-full w-full"
         style={{ overflowWrap: "anywhere" }}
       >
         <table className="table-auto w-full h-full rounded-lg overflow-hidden relative">

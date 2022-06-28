@@ -217,10 +217,10 @@ function ICDashboard() {
   }, []);
 
   return (
-    <div className="w-screen min-h-screen h-screen bg-bggray flex relative overflow-y-auto overflow-x-hidden">
+    <div className="w-screen min-h-screen h-screen bg-ghostWhite flex relative overflow-y-auto overflow-x-hidden">
       <Sidebar />
 
-      <div className="w-full p-5 lg:p-8 relative ml-[180px] lg:ml-[255px]">
+      <div className="w-full p-5 lg:p-8 relative ml-sidebar-sm lg:ml-sidebar-lg">
         <PageHeader title="Dashboard" />
 
         <StatsCard

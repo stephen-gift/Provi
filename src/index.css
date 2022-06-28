@@ -42,16 +42,16 @@ body {
 }
 
 nav .active {
-  @apply bg-lgray bg-opacity-[0.08] border-lighterGray;
+  @apply bg-lgray bg-opacity-8 border-lavender;
 }
 
 nav .active span,
 nav .active svg {
-  @apply text-lighterGray;
+  @apply text-lavender;
 }
 
 .scrolledTableHead th {
-  @apply p-2 lg:px-4 lg:py-3 font-bold text-sm text-white sticky top-[1px];
+  @apply p-2 lg:px-4 lg:py-3 font-bold text-sm text-white sticky top-1;
 }
 
 .scrolledTableBody td {
