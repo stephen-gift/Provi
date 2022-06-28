@@ -4,12 +4,10 @@ function ScrolledTable({ children }) {
   return (
     <div className="py-4">
       <div
-        className="table-container overflow-y-auto overflow-x-hidden  max-h-table-height h-full w-full"
+        className="table-container overflow-auto max-h-table-height h-fit w-full"
         style={{ overflowWrap: "anywhere" }}
       >
-        <table className="table-auto w-full h-full rounded-lg overflow-hidden relative">
-          {children}
-        </table>
+        <table className="table-auto w-full">{children}</table>
       </div>
     </div>
   );
@@ -17,17 +15,15 @@ function ScrolledTable({ children }) {
 
 function ScrolledTableHead({ children }) {
   return (
-    <thead className="bg-buyellow text-white relative">
-      <tr className="scrolledTableHead  sticky top-0 right-0 left-0">
-        {children}
-      </tr>
+    <thead className="text-white sticky top-0">
+      <tr className="scrolledTableHead">{children}</tr>
     </thead>
   );
 }
 
 function ScrolledTableBody({ children }) {
   return (
-    <tbody className="text-center bg-white scrolledTableBody">{children}</tbody>
+    <tbody className="scrolledTableBody text-center bg-white">{children}</tbody>
   );
 }
 
