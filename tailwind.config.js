@@ -45,6 +45,7 @@ module.exports = {
       fontSize: {
         8: "8px",
         10: "10px",
+        12: "12px",
       },
       fontWeight: {
         hairline: 100,
@@ -76,6 +77,9 @@ module.exports = {
         sgry: "#ACAFD2",
         bdblack: "#00000070",
         metallicSilver: "#A4A6B3",
+        lightSilver: "#D9D9D9",
+        independence: "#4B506D ",
+        gray: "#7C7B7B",
         error: "#FF0000",
       },
       gap: {
@@ -83,7 +87,8 @@ module.exports = {
       },
       opacity: {
         8: "0.08",
-        10: "0.1",
+        10: "0.10",
+        16: "0.16",
       },
       inset: {
         1: "1px",

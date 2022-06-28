@@ -4,10 +4,10 @@ import Sidebar from "../Sidebar/Sidebar";
 
 function PageLayout({ pageTitle, children }) {
   return (
-    <div className="w-screen min-h-screen h-screen bg-ghostWhite flex relative overflow-y-auto overflow-x-hidden">
+    <div className="w-full min-h-screen h-full bg-ghostWhite flex relative overflow-y-auto overflow-x-hidden">
       <Sidebar />
 
-      <div className="w-full p-5 lg:p-8 relative ml-sidebar-sm lg:ml-sidebar-lg">
+      <div className="w-full p-5 lg:p-8 lg:pb-4 relative ml-sidebar-sm lg:ml-sidebar-lg overflow-x-hidden">
         <PageHeader pageTitle={pageTitle} />
 
         {children}
