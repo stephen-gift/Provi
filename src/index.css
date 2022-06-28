@@ -47,7 +47,7 @@ nav .active {
 
 nav .active span,
 nav .active svg {
-  @apply text-lavender;
+  @apply text-lavender fill-lavender;
 }
 
 .scrolledTableHead th {

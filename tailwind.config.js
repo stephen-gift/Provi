@@ -24,6 +24,7 @@ module.exports = {
         "login-height": "600px",
         "signup-height": "770px",
         "side-height": "1024px",
+        "table-height": "400px",
       },
       minWidth: {
         "sidebar-md": "200px",
