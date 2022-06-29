@@ -33,6 +33,7 @@ module.exports = {
         "sidebar-lg": "255px",
       },
       minHeight: {
+        36: "36px",
         "stats-height": "130px",
       },
       maxHeight: {
@@ -95,6 +96,9 @@ module.exports = {
       },
       inset: {
         1: "1px",
+      },
+      boxShadow: {
+        menu: "0px 0px 4px rgba(0, 0, 0, 0.25)",
       },
     },
   },

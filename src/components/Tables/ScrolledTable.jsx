@@ -15,7 +15,7 @@ function ScrolledTable({ children }) {
 
 function ScrolledTableHead({ children }) {
   return (
-    <thead className="text-white sticky top-0">
+    <thead className="text-white sticky top-0 z-30">
       <tr className="scrolledTableHead">{children}</tr>
     </thead>
   );

@@ -88,6 +88,7 @@ function UserSettings() {
               type="password"
               placeholder="*****"
               id="currentPassword"
+              autoComplete="off"
               className="py-3 px-4 rounded-lg outline-0 border border-bgray bg-ibgray text-sm placeholder:text-independence placeholder:text-opacity-40"
             />
           </div>
@@ -102,6 +103,7 @@ function UserSettings() {
               type="password"
               placeholder="*****"
               id="newPassword"
+              autoComplete="off"
               className="py-3 px-4 rounded-lg outline-0 border border-bgray bg-ibgray text-sm placeholder:text-independence placeholder:text-opacity-40"
             />
           </div>

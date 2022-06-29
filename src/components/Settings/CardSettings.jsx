@@ -17,7 +17,7 @@ function CardSettings() {
 
       <div className="flex flex-col lg:grid grid-cols-2 gap-x-20 gap-y-5 pb-8 lg:w-11/12">
         <form onSubmit={handleSubmit} className="flex gap-5 items-center">
-          <p className="text-base lg:text-lg font-medium flex-1 lg:whitespace-nowrap">
+          <p className="text-base lg:text-lg font-medium flex-1">
             Minimun Re-Order Level
           </p>
           <input
@@ -33,7 +33,7 @@ function CardSettings() {
           </button>
         </form>
         <form onSubmit={handleSubmit} className="flex gap-5 items-center">
-          <p className="text-base lg:text-lg font-medium flex-1 lg:whitespace-nowrap">
+          <p className="text-base lg:text-lg font-medium flex-1">
             Update Blank Card In The Bank
           </p>
           <input
@@ -49,7 +49,7 @@ function CardSettings() {
           </button>
         </form>
         <form onSubmit={handleSubmit} className="flex gap-5 items-center">
-          <p className="text-base lg:text-lg font-medium flex-1 lg:whitespace-nowrap">
+          <p className="text-base lg:text-lg font-medium flex-1">
             Standard Request Limit
           </p>
           <input
