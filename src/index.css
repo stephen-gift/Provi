@@ -57,7 +57,11 @@ nav .active svg {
 }
 
 .scrolledTableHead th {
-  @apply p-2 lg:px-4 lg:py-3 font-bold text-sm text-white bg-buyellow first:rounded-tl-lg last:rounded-tr-lg;
+  @apply p-2 lg:px-4 lg:py-3 uppercase font-bold text-sm text-white bg-buyellow first:rounded-tl-lg last:rounded-tr-lg;
+}
+
+.scrolledTableBody tr {
+  @apply transition hover:bg-brightGray hover:bg-opacity-50;
 }
 
 .scrolledTableBody td {

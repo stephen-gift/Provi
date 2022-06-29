@@ -80,7 +80,10 @@ module.exports = {
         lightSilver: "#D9D9D9",
         independence: "#4B506D ",
         gray: "#7C7B7B",
+        brightGray: "#EBEDF0",
+        greenSheen: "#67BBA6",
         error: "#FF0000",
+        pigment: "#E81E2A",
       },
       gap: {
         700: "700px",

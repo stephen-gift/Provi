@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PageLayout from "../../components/PageLayout/PageLayout";
+import AssignRoles from "../../components/Settings/AssignRoles";
 import CardSettings from "../../components/Settings/CardSettings";
 import UserSettings from "../../components/Settings/UserSettings";
 
@@ -51,6 +52,7 @@ function ICSettings() {
       </div>
 
       {activePage === "User Settings" && <UserSettings />}
+      {activePage === "Assign Roles" && <AssignRoles />}
       {activePage === "Card Settings" && <CardSettings />}
     </PageLayout>
   );
