@@ -5,7 +5,7 @@ import userImg from "../../assets/_header.png";
 function PageHeader({ pageTitle }) {
   return (
     <div className="flex items-center justify-between pb-5">
-      <h1 className="text-lg lg:text-2xl font-bold text-lblack">{pageTitle}</h1>
+      <h1 className="text-xl lg:text-2xl font-bold text-lblack">{pageTitle}</h1>
 
       <div className="flex items-center gap-4">
         <Notification />

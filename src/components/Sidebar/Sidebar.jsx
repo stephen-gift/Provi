@@ -99,7 +99,7 @@ function Sidebar() {
           <ul className="w-full">
             <li className="border-t border-t-platinum border-opacity-10">
               <NavLink
-                to="/settings"
+                to="/ic-settings"
                 className="group flex gap-4 lg:gap-6 items-center py-5 pl-4 lg:pl-8 pr-2 border-l-3 border-transparent transition ease-out duration-500 select-none hover:bg-lgray hover:bg-opacity-8 hover:border-lavender"
               >
                 <svg
@@ -134,26 +134,26 @@ function Sidebar() {
                   <path
                     d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6"
                     stroke="#E81E2A"
-                    stroke-opacity="0.89"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeOpacity="0.89"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M10.6667 11.3332L14.0001 7.99984L10.6667 4.6665"
                     stroke="#E81E2A"
-                    stroke-opacity="0.89"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeOpacity="0.89"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M14 8H6"
                     stroke="#E81E2A"
-                    stroke-opacity="0.89"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeOpacity="0.89"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
 

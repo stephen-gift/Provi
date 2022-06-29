@@ -33,6 +33,7 @@ module.exports = {
         "sidebar-lg": "255px",
       },
       minHeight: {
+        36: "36px",
         "stats-height": "130px",
       },
       maxHeight: {
@@ -45,6 +46,7 @@ module.exports = {
       fontSize: {
         8: "8px",
         10: "10px",
+        12: "12px",
       },
       fontWeight: {
         hairline: 100,
@@ -76,17 +78,27 @@ module.exports = {
         sgry: "#ACAFD2",
         bdblack: "#00000070",
         metallicSilver: "#A4A6B3",
+        lightSilver: "#D9D9D9",
+        independence: "#4B506D ",
+        gray: "#7C7B7B",
+        brightGray: "#EBEDF0",
+        greenSheen: "#67BBA6",
         error: "#FF0000",
+        pigment: "#E81E2A",
       },
       gap: {
         700: "700px",
       },
       opacity: {
         8: "0.08",
-        10: "0.1",
+        10: "0.10",
+        16: "0.16",
       },
       inset: {
         1: "1px",
+      },
+      boxShadow: {
+        menu: "0px 0px 4px rgba(0, 0, 0, 0.25)",
       },
     },
   },

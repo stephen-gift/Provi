@@ -21,7 +21,7 @@ function Notification() {
             cy="7.5"
             r="6"
             stroke="#F7F8FC"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             className="fill-buyellow"
           />
         </svg>
